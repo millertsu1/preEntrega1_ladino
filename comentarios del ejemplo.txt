@@ -1,0 +1,2 @@
+En el Index.html, se encunentra un ejemplo de validaciond e formulario, mediante  la JS en los campos usando un funcion para llamar los  que dentro realizara la validacion usando los condicionales IF ELSE.
+Luego en el EjemploFor.html esta el ejercicio del consumo de una API usando el bulce for para iterar los elementos que me arroja la API y que se muestran por pantalla.

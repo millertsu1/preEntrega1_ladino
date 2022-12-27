@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>preEntrega1_ladino</title>
+</head>
+
+<body>
+    <form action="validacion.php" method="POST"
+        class="newsletter__form" onsubmit="return validateForm();">
+        <div class="container-inputs">
+            <input id="nombre" class="nombre" type="text" name="nombre" placeholder="       Nombre" >
+            <input id="correo" class="email" type="email" name="email" placeholder="        Email" >
+            <input id="telefono" class="telefono" type="text" name=" telefono" placeholder="      Telefono" >
+            <input id="cargo" class="cargo" type="text" name="cargo" placeholder="        Cargo" >
+
+            <div class="select">
+               <div class="asunto-tag">
+                    <img src="./icons-form/asunto.svg" alt="icono asunto" class="asunto">
+                    <label for="subject" class="labelAsunto">Asunto</label>
+                </div> 
+                    <select name="subject" id="asunto" class="opciones">
+                        <option value="0" class="opt1"></option>
+                        <option value="vacaciones" class="opt1">Vacaciones</option>
+                        <option value="certificaciones" class="opt1">Certificaciones</option>
+                        <option value="preguntas">Preguntas</option>
+                    </select>
+            </div>
+            <img src="" alt="" class="mensaje-icon">
+            <label for="mensaje" class="mensaje">Mensaje</label><br>
+            <textarea  name="mensaje" id="mensaje" cols="30" rows="10" class="textarea" placeholder="Cuentanos brevemente en que te podemos ayudar" ></textarea>
+            <input type="submit"  value="Enviar" class="btn"></input>
+            <button type="reset" class="btn btn-color">Reset</button>
+            <small id="mensajeFinal" class="mensajeFinal"></small>
+        </div>
+    </form>
+    <script src="./validate.js"></script>
+</body>
+
+</html>
